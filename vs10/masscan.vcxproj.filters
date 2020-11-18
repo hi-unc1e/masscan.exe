@@ -237,6 +237,9 @@
     <ClCompile Include="..\src\main-readrange.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\misc-rstfilter.c">
+      <Filter>Source Files\misc</Filter>
+    </ClCompile>
     <ClCompile Include="..\src\crypto-blackrock2.c">
       <Filter>Source Files\crypto</Filter>
     </ClCompile>
@@ -512,6 +515,9 @@
     <ClInclude Include="..\src\main-readrange.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClCompile Include="..\src\misc-rstfilter.h">
+      <Filter>Source Files\misc</Filter>
+    </ClCompile>
     <ClInclude Include="..\src\proto-interactive.h">
       <Filter>Source Files\proto</Filter>
     </ClInclude>

@@ -841,9 +841,9 @@ receive_thread(void *v)
             case FOUND_SCTP:
                 handle_sctp(out, secs, px, length, cookie, &parsed, entropy);
                 break;
-            case FOUND_OPROTO: /* other IP proto */
-                handle_oproto(out, secs, px, length, &parsed, entropy);
-                break;
+            //case FOUND_OPROTO: /* other IP proto */
+                //handle_oproto(out, secs, px, length, &parsed, entropy);
+                //break;
             case FOUND_TCP:
                 /* fall down to below */
                 break;

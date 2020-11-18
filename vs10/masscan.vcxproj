@@ -119,6 +119,7 @@
     <ClCompile Include="..\src\vulncheck-sslv3.c" />
     <ClCompile Include="..\src\vulncheck.c" />
     <ClCompile Include="..\src\xring.c" />
+    <ClCompile Include="..\src\misc-rstfilter.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\crypto-base64.h" />
@@ -203,6 +204,7 @@
     <ClInclude Include="..\src\versioning.h" />
     <ClInclude Include="..\src\vulncheck.h" />
     <ClInclude Include="..\src\xring.h" />
+    <ClInclude Include="..\src\misc-rstfilter.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\doc\masscan.8.markdown" />
@@ -215,29 +217,34 @@
     <ProjectGuid>{C88D7583-254F-4BE6-A9B9-89A5BB52E679}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>masscan</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">

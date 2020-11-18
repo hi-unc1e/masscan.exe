@@ -67,6 +67,30 @@ const char *strerror_x(int x);
 #  define PRIx64 "llx"
 # endif
 
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+#elif defined(_MSC_VER)
+/*Visual Studio 2017*/
+# include <stdio.h>
+# include <string.h>
+# define strcasecmp     _stricmp
+# define memcasecmp     _memicmp
+# ifndef PRIu64
+#  define PRIu64 "llu"
+#  define PRId64 "lld"
+#  define PRIx64 "llx"
+# endif
+
 #elif defined(_MSC_VER) && (_MSC_VER == 1600)
 /*Visual Studio 2010*/
 # include <stdio.h>
