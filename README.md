@@ -7,7 +7,7 @@
 感谢 @zxibang  @kouzhudong  两位的解答，经过调试终于完美解决报错LNK2019的问题。具体步骤如下：
 
 0. 克隆 https://github.com/robertdavidgraham/masscan 到本地
-1. 在`masscan\vs10\masscan.vcxproj`中对应位置，分别添加`<ClCompile` Include="..\src\misc-rstfilter.c" />`、`<ClInclude Include="..\src\misc-rstfilter.h" />`
+1. 在`masscan\vs10\masscan.vcxproj`中对应位置，分别添加`<ClCompile Include="..\src\misc-rstfilter.c" />`、`<ClInclude Include="..\src\misc-rstfilter.h" />`
 2. 在`masscan\vs10\masscan.vcxproj.filters`中对应位置，分别添加`<ClCompile Include="..\src\misc-rstfilter.c">
       <Filter>Source Files\misc</Filter>
     </ClCompile>` 及  `<ClCompile Include="..\src\misc-rstfilter.h">
